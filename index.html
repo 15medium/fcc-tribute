@@ -1,21 +1,16 @@
 <html>
 <head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">	
-	<style>
-		body{
-			background-color: #000;
-		}
-		h1{
-			font-family: 'Barrio', cursive;
-		}
-		.jumbotron{
-			background-color: #000;
-			color: #ccc;
-		}
-	</style>
+	<title>FCC Tribute Challenge - Trent Reznor</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 </head>	
 <body>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Barrio');
+		body{background-color: #000;}
+		h1{font-family: 'Barrio', cursive;}
+		.jumbotron{background-color: #000; color: #ccc;}
+	</style>
+
 	<div class="container"> <!-- needed for page -->
 		<div class="jumbotron"> <!-- makes larger text and grey background -->
 			<div class="text-center">
@@ -23,12 +18,13 @@
 			</div>
 		</div>
 
-		<div class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 well">
-			<div class="thumbnail"><!-- gives padded white background and border around img. Use this class plus img + div with caption in place of figure (img + figcaption)-->
-				<img src="images/reznor2.jpg" class="img-responsive" alt="trent reznor on stage" >
+		<div class="col-xs-12 col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 card bg-faded">
+			<div><!-- gives padded white background and border around img. Use this class plus img + div with caption in place of figure (img + figcaption)-->
+				<img src="http://15medium.com/codepen/tribute/reznor2.jpg" class="img-fluid" alt="trent reznor on stage" >
 				<div class="caption text-center"><em>Nine Inch Nails performing in Worster MA on November 9, 2008. Photo by maryelle st. clare</em></div>
-			</div> <!-- formats for phone, tablet and medium desktop, not large desktop (lg). Offsets for tablet and medium desktop. -->	
-			<blockquote>
+			</div> <!-- formats for phone, tablet and medium desktop, not large desktop (lg). Offsets for tablet and medium desktop. -->
+			&nbsp;
+			<blockquote class="blockquote">
 				<p>"In my life, I was always floating around the edge of the dark side and saying what if take it a little bit too far, and who says you have to stop there, and what's behind the next door. Maybe you gain a wisdom from examining those things. But after a while, you get too far down in the quicksand."</p>
 
 				<footer><!-- makes text smaller and italicized -->
@@ -46,31 +42,32 @@
 			<div>
 				<h3>Selected Album Art</h3>
 
-				<div class="col-md-12">
-					<div class="col-md-2">
-						<img src="images/phm.jpg" class="img-responsive" alt="Pretty Hate Machine" >
+				<div class="row">
+					<div class="col">
+						<img src="http://15medium.com/codepen/tribute/phm.jpg" class="img-fluid" alt="Pretty Hate Machine" >
 						<div class="caption text-center"><em>Pretty Hate Machine</em></div>
 					</div>
-					<div class="col-md-2">
-						<img src="images/broken.jpg" class="img-responsive" alt="Broken" >
+					<div class="col">
+						<img src="http://15medium.com/codepen/tribute/broken.jpg" class="img-fluid" alt="Broken" >
 						<div class="caption text-center"><em>Broken</em></div>
 					</div>
-					<div class="col-md-2">
-						<img src="images/spiral.jpg" class="img-responsive" alt="The Downward Spiral" >
+					<div class="col">
+						<img src="http://15medium.com/codepen/tribute/spiral.jpg" class="img-fluid" alt="The Downward Spiral" >
 						<div class="caption text-center"><em>The Downward Spiral</em></div>
 					</div>
-					<div class="col-md-2">
-						<img src="images/further.jpg" class="img-responsive" alt="Further Down the Spiral" >
+					<div class="col">
+						<img src="http://15medium.com/codepen/tribute/further.jpg" class="img-fluid" alt="Further Down the Spiral" >
 						<div class="caption text-center"><em>Further Down the Spiral</em></div>
 					</div>
-					<div class="col-md-2">
-						<img src="images/teeth.jpg" class="img-responsive" alt="With Teeth" >
+					<div class="col">
+						<img src="http://15medium.com/codepen/tribute/teeth.jpg" class="img-fluid" alt="With Teeth" >
 						<div class="caption text-center"><em>With Teeth</em></div>
 					</div>
-					<div class="col-md-2">
-						<img src="images/hesitation.jpg" class="img-responsive" alt="Hesitation Marks" >
+					<div class="col">
+						<img src="http://15medium.com/codepen/tribute/hesitation.jpg" class="img-fluid" alt="Hesitation Marks" >
 						<div class="caption text-center"><em>Hesitation Marks</em></div>
 					</div>
+					
 				</div>
 
 			</div>
@@ -85,28 +82,29 @@
 			<p><em>Portions of this biography appeared in The Rolling Stone Encyclopedia of Rock &amp; Roll (Simon &amp; Schuster, 2001). Evan Serpick contributed to this article.</em></p>
 
 			<h3>Selected Discography</h3>
+			<div class="row">
+				<div class="col">
+					<ul>
+						<li><strong>Pretty Hate Machine</strong> - Released: October 20, 1989</li>
+						<li><strong>Broken</strong> - Released: September 22, 1992</li>
+						<li><strong>The Downward Spiral</strong> - Released: March 8, 1994</li>
+						<li><strong>Further Down the Spiral</strong> - Released: June 1, 1995</li>
+						<li><strong>The Fragile</strong> - Released: September 21, 1999</li>
+						<li><strong>Things Falling Apart</strong> -	Released: November 21, 2000</li>
+						<li><strong>And All That Could Have Been</strong> -	Released: January 22, 2002</li>
+					</ul>
+				</div>
 
-			<div class="col-md-6">
-				<ul>
-					<li><strong>Pretty Hate Machine</strong> - Released: October 20, 1989</li>
-					<li><strong>Broken</strong> - Released: September 22, 1992</li>
-					<li><strong>The Downward Spiral</strong> - Released: March 8, 1994</li>
-					<li><strong>Further Down the Spiral</strong> - Released: June 1, 1995</li>
-					<li><strong>The Fragile</strong> - Released: September 21, 1999</li>
-					<li><strong>Things Falling Apart</strong> -	Released: November 21, 2000</li>
-					<li><strong>And All That Could Have Been</strong> -	Released: January 22, 2002</li>
-				</ul>
-			</div>
-
-			<div class="col-md-6">
-				<ul>
-					<li><strong>With Teeth</strong> - Released: May 3, 2005</li>
-					<li><strong>Year Zero</strong> - Released: April 17, 2007</li>
-					<li><strong>Year Zero Remixed</strong> - Released: November 20, 2007</li>
-					<li><strong>Ghosts I-IV</strong> -	Released: March 2, 2008</li>
-					<li><strong>The Slip</strong> -	Released: May 5, 2008</li>
-					<li><strong>Hesitation Marks</strong> -	Released: August 30, 2013</li>
-				</ul>
+				<div class="col">
+					<ul>
+						<li><strong>With Teeth</strong> - Released: May 3, 2005</li>
+						<li><strong>Year Zero</strong> - Released: April 17, 2007</li>
+						<li><strong>Year Zero Remixed</strong> - Released: November 20, 2007</li>
+						<li><strong>Ghosts I-IV</strong> -	Released: March 2, 2008</li>
+						<li><strong>The Slip</strong> -	Released: May 5, 2008</li>
+						<li><strong>Hesitation Marks</strong> -	Released: August 30, 2013</li>
+					</ul>
+				</div>
 			</div>
 			<div class="clearfix"></div>
 
